@@ -12,7 +12,7 @@ const CountryDetail = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setCountry(data));
-    }, []);
+    }, [name]);
 
     return (
         <div style= {{margin: '20px', border: '1px solid red', borderRadius: '20px', fontSize: '20px', width: '400px', padding: '20px'}}>
