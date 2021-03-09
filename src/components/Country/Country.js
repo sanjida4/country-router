@@ -29,7 +29,7 @@ const Country = (props) => {
     }
 
     return (
-        <Card className={classes.root} style={{ height: '280px', width: '250px', margin: '20px', border: '1px solid lightgray'}}>
+        <Card className={classes.root} style={{ height: '370px', width: '300px', margin: '20px', border: '1px solid lightgray', display: "inline-block"}}>
             <CardActionArea>
                 <CardMedia
                     className={classes.media}

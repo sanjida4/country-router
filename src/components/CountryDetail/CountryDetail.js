@@ -15,11 +15,18 @@ const CountryDetail = () => {
     }, []);
 
     return (
-        <div>
-            <h3>This is details about: {name}</h3>
-            <p>Region: {country.region}</p>
-            <p>Population: {country.population}</p>
-            <p>Currencies: {country.currencies}</p>
+        <div style= {{margin: '20px', border: '1px solid red', borderRadius: '20px', fontSize: '20px', width: '400px', padding: '20px'}}>
+            <p><strong>{name}</strong></p>
+            {
+                country.length > 0 && (
+                    <div>
+                        <img src={country[0].flag} width="350px"/>
+                        <p>Region: {country[0].region}</p>
+                        <p>Population: {country[0].population}</p>
+                        <p>Currencies: {country[0].currencies[0].symbol}</p>
+                    </div>
+                )
+            }
         </div>
     );
 };
